@@ -10,13 +10,13 @@ body {
     background-color: rgb(166, 70, 70);
 }
 img {
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 20vw;
+    max-height: 30vh;
     border-radius: 10px;
 }
 
 div {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

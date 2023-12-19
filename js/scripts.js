@@ -34,7 +34,7 @@ const JohnWick = {
 
 const Gogeta = {
     Nome: 'Gogeta',
-    Ruolo: 'DevastaTroppofortespaccatutto',
+    Ruolo: 'Devasta Troppoforte Spaccatutto',
     Foto: 'https://wallpapers.com/images/hd/ssj4-gogeta-charging-attack-duizx1m5zp1wq49v.jpg',
 };
 
@@ -51,17 +51,22 @@ for (let i = 0; i < team.length; i++) {
     console.log('-', team[i]);
     //MILESTONE 2
     let member = document.createElement('div');
-    document.body.append(member);
+    
+    //Per le chiavi presenti dentro gli oggetti dell'array 'team'
     for (let key in team[i]) {
+        //Stampa in console le chiavi ed i rispettivi contenuti
         console.log('CHIAVE: ' + key + ':', team[i][key]);
         
-
+        //Se la chiave è una foto
         if(key  === 'Foto') {
+            //Aggiungi  al div 'member' la chiave foto e una un img che contiene il contenuto della chiave (quindi l'immagine)
             member.innerHTML += `${key}: <img src="${team[i][key]}">`
         } else {
             member.innerHTML += key + ': ' + team[i][key] + '<br>';
         }
     }
+
+    document.body.append(member);
 }
 
 
