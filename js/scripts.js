@@ -8,8 +8,8 @@ console.log('Js-Our-Team');
 const team = [];
 
 //Creo gli oggetti dell'array
-const sherek = {
-    Nome: 'Sherek',
+const shrek = {
+    Nome: 'Shrek',
     Ruolo: 'Orco',
     Foto: 'https://static.sky.it/images/skytg24/it/spettacolo/cinema/2020/08/28/shrek-curiosita-film/Shrek.jpg.transform/hero-mobile-2x/683398ae8c3f9e044c4cdb1ff5a44dc68275e7f0/img.jpg',
 };
@@ -39,7 +39,7 @@ const Gogeta = {
 };
 
 //Pusho gli oggetti dentro l'array
-team.push(sherek,mrBean,mrPotato,JohnWick,Gogeta);
+team.push(shrek,mrBean,mrPotato,JohnWick,Gogeta);
 
 
 //MILESTONE 1
@@ -49,6 +49,7 @@ let member = document.createElement('div');
 
 for (let i = 0; i < team.length; i++) {
     console.log('-', team[i]);
+    //MILESTONE 2
     let member = document.createElement('div');
     document.body.append(member);
     for (let key in team[i]) {
